@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url("../fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url("../fonts/WorkSans-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url("../fonts/WorkSans-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url("../fonts/WorkSans-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Darumadrop';
+    src: url("../fonts/DarumadropOne-Regular.ttf");
+}
+
+:root {
+    --widthContent: 680px;
+
+    --colorBackground: #fdf6e3;
+    --colorBackground2: #eee8d5;
+    --colorForeground: #002b36;
+    --colorPrimary: #2aa198;
+}
+
+body {
+    background-color: var(--colorBackground);
+    color: var(--colorForeground);
+    font-family: 'Work Sans';
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0;
+    max-width: calc(var(--widthContent) + 2em);
+}
+
+h1 {
+    font-family: 'Darumadrop';
+}
+
+h1 > a {
+    color: var(--colorForeground);
+    font-style: normal;
+    text-decoration: none;
+}
+
+h1 > a:hover {
+    color: var(--colorPrimary);
+    text-decoration: none;
+}
+
+strong {
+    color: var(--colorPrimary);
+}
+
+hr {
+    border: 1px solid var(--colorBackground2);
+}
+
+a {
+    color: var(--colorPrimary);
+    font-style: italic;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
